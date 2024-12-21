@@ -27,7 +27,9 @@ Route::get('/', function () {
 
 
 Route::view('/Home','home');
+Route::view('/ab/{user}','about');
+Route::view('/admin','admin.Login');
 
-Route::view('/ab','about');
 Route::get('user-home',[UserController::class,'userHome']);
-Route::get('user-about',[UserController::class,'userAbout']);
+Route::get('user-about/{name}',[UserController::class,'userAbout']);
+Route::get('admin-login',[UserController::class,'adminLogin']);
