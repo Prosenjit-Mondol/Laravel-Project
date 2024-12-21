@@ -29,3 +29,4 @@ Route::get('/', function () {
 Route::view('/Home','home');
 
 Route::view('/ab','about');
+Route::get('user-home',[UserController::class,'userHome']);
