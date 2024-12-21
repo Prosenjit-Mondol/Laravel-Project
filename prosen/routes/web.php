@@ -30,3 +30,4 @@ Route::view('/Home','home');
 
 Route::view('/ab','about');
 Route::get('user-home',[UserController::class,'userHome']);
+Route::get('user-about',[UserController::class,'userAbout']);
