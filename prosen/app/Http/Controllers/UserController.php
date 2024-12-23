@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\View;
 class UserController extends Controller
 {
     //
-    function userHome(){
+    function userHome($name){
         $name="pro";
         $users=['pro','sen','jit','pritha'];
         return view('home',["name"=>$name,"users"=>$users]);
